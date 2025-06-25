@@ -19,7 +19,7 @@ app.post("/chat", async (req, res) => {
   });
 
   const data = await response.json();
-  res.json(data);
+  res.send(JSON.stringify(data));
 });
 
 app.listen(3000);
